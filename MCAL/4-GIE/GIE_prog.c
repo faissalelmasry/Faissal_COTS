@@ -12,10 +12,12 @@
 
 void GIE_voidEnableGlobal(void)
 {
+	//SET_BIT(SREG,SREG_I);
 	__asm  __volatile("SEI");
 }
 
 void GIE_voidDisableGlobal(void)
 {
+	//CLR_BIT(SREG,SREG_I);
 	__asm  __volatile("CLI");
 }
